@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.text-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Important for spaces to render correctly */
+}
+
+.char {
+    color: #888; /* Default upcoming character color */
+}
+
+.char.correct {
+    color: #4CAF50; /* Green for correct */
+}
+
+.char.incorrect {
+    color: #f44336; /* Red for incorrect */
+    background-color: #ffebee;
+}
+
+.char.active {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: #333; /* Darker color for active character */
+}
+
+.instructions {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
